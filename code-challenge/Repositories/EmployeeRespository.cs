@@ -29,7 +29,7 @@ namespace challenge.Repositories
 
         public Employee GetById(string id, bool getDirectReports = false)
         {
-            // If set to true, we will get any available direct reports as all nested children
+            // If set to true, we will get any available direct reports as well as all nested children
             if (getDirectReports)
             {
                 return _employeeContext.Employees
